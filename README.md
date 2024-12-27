@@ -8,7 +8,7 @@ Recommender system to make book preferences and category prediction based on tex
   - userID:  The ID of the user. This is a hashed user identifier from Goodreads
   - bookID: The ID of the book. This is a hashed book identifier from Goodreads
   - rating: The star rating of the user’s review
-- train Category.json.gzL Training data for the category prediction task
+- train Category.json.gz: Training data for the category prediction task
   - n_votes: The number of ‘likes’ this review has received
   - review_id: A hashed identifier for this review
   - user_id: A hashed identifier for the user
