@@ -29,18 +29,16 @@ would read the book (0 or 1)
 ## Methodologies 
 
 Part 1: 
-- looped over potential thresholds to find the best one
-- created a list of the most popular books using that threshold
-- looped over all the data in the test set, and if the given book was in the list of the most popular books, classified it as popular or not in a temporary data frame
-- using that temporary data frame, I created an sklearn preprocessor and pipeline
-- used that pipeline to predict the popularity of the books in pairs_Read.csv
+- looped over potential thresholds to find the optimal threshold
+- created a list of the most popular books using optimal threshold
+- used list of the most popular books to create sklearn preprocessor and pipeline  
+- used preprocessor and pipeline to predict whether or not book would be read by user in pairs_Read.csv
+- stored predictions in predictions_Read.csv
 
 Part 2:
-- collected all of the data from the training dataset
-- inputted data in a TfidfVectorizer and fit it and transformed it using TfidfVectorizer's methods
-- created a pipeline model that transforms the data using TfidfVectorizer and LinearSVC transformers
-- fit the x training data through that pipeline model
+- inputted review training data in a TfidfVectorizer to fit and transform using LinearSVC transformers
 - looped through the testing data and extracted all of the reviews
-- predicted y valid values using the pipeline model
+- predicted y valid values using the pipeline 
 - matched all of the predicted y valid values with the user IDs and review IDs in the test_Category file
+- stored category predictions in predictions_Category.csv
   
