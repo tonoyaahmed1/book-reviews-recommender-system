@@ -26,7 +26,7 @@ Recommender system to make book preferences and category prediction based on tex
 would read the book (0 or 1)
 - predictions_Category.csv: Predictions of the category of a book from a review. Five categories are used for these predictions: Children’s, Comics/Graphic Novels, Fantasy, Mystery/Thriller, and Romance
 
-## Methodologies 
+## Methodologies in main.py
 
 Part 1: 
 - looped over potential thresholds to find the optimal threshold
